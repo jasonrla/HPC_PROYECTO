@@ -199,7 +199,7 @@ public class DesembolsoSteps {
         desembolsoPage.cbnivel.selectByVisibleText(Nivel);
         pause(2);
     }
-
+//Jason
     public void seleccionarLaProfesion(String Profesion) {
         logger.info("selecciona la profesion");
         desembolsoPage.cbprofesion.selectByVisibleText(Profesion);
