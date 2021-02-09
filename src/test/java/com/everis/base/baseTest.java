@@ -16,16 +16,28 @@ import org.openqa.selenium.chrome.ChromeDriverService;
 public class baseTest {
 
     public static String ANSI_GREEN = "\u001B[32m";
-    public static final String EVERIS_WELCOME =
+    public static final String IBK_WELCOME =
             "-------------------------------------------------------------------------------------|\n" +
                     "-------------------------------------------------------------------------------------|\n" +
-                    " ._______  __       ___ ._______  ______      __     ______       \n" +
-                    " |   ____| \\  \\    /  / |  ____|  |   _  \\   |  |   /  ___|     \n" +
-                    " |  |____   \\  \\  /  /  | |____   |  |_)  |  |  |  |   /          \n" +
-                    " |  |____|   \\  \\/  /   |  ___|   |     /    |  |   \\  \\_         \n" +
-                    " |  |____     \\ \\  /    | |____   |  |\\ \\__  |  |  __)   |       \n" +
-                    " |_______|     \\__/     |_______| |__| \\___| |__| |_____/         \n" +
-                    "                                                                       \n" +
+                    "                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n" +
+                    "                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n" +
+                    "                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n" +
+                    "                         @@@@@@@@@@@@@@@@@@@@@@@@@@  @@@@@@@ \n" +
+                    "                         @@@@@@@@@@@@@@@@@@@@        @@@@@@@ \n" +
+                    "                         @@@@@@@@@@@@@               @@@@@@@ \n" +
+                    "                         @@@@@@@                     @@@@@@@ \n" +
+                    "                         @@@@@@@                     @@@@@@@ \n" +
+                    "                         @@@@@@@                     @@@@@@@ \n" +
+                    "                         @@@@@@@                     @@@@@@@ \n" +
+                    "                         @@@@@@@                     @@@@@@@ \n" +
+                    "                         @@@@@@@                     @@@@@@@ \n" +
+                    "                         @@@@@@@                     @@@@@@@ \n" +
+                    "                         @@@@@@@               @@@@@@@@@@@@@ \n" +
+                    "                         @@@@@@@          @@@@@@@@@@@@@@@@@@ \n" +
+                    "                         @@@@@@@  @@@@@@@@@@@@@@@@@@@@@@@@@@ \n" +
+                    "                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n" +
+                    "                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n" +
+                    "                         @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ \n" +
                     "-------------------------------------------------------------------------------------|\n" +
                     "-------------------------------------------------------------------------------------|\n";
 
@@ -34,12 +46,12 @@ public class baseTest {
     public static void messages() {
         //System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
-        System.out.println(ANSI_GREEN + EVERIS_WELCOME + ANSI_GREEN);
+        System.out.println(ANSI_GREEN + IBK_WELCOME + ANSI_GREEN);
     }
 
     @AfterClass
     public static void message() {
-        System.out.println(ANSI_GREEN + EVERIS_WELCOME + ANSI_GREEN);
+        System.out.println(ANSI_GREEN + IBK_WELCOME + ANSI_GREEN);
     }
 
 }

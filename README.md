@@ -1,6 +1,6 @@
 # CONTINUOUS TESTING
 
-Proyecto de equipo Testing QA y Autonatizadores QA
+Proyecto de equipo Testing QA y Automatizadores QA
 
 ## Getting Started
 Con las siguientes instrucciones logrará el correcto
@@ -33,11 +33,6 @@ El proyecto usa las siguientes librerias para el Build y Test:
 * [SerenityBDD](http://www.thucydides.info/docs/serenity/#first-steps) - Librería SerenityBDD 
 * [PMD](https://pmd.github.io/latest/pmd_rules_java.html) - Analizador de código estático
 * [Spotbugs](https://find-sec-bugs.github.io/bugs.htm) - Analizador de seguridad en código
-
-## Authors
-**EVERIS PERU**  
- *Jesus Ovalle Porras*
-
 
 ## License
 
