@@ -138,6 +138,18 @@ public class DesembolsoPage extends PageObject {
     public WebElementFacade opcCancelacion;
 
 
+    @FindBy(id = "dgLista_ctl02_chkSeleccion")
+    public WebElementFacade registro1;
+
+    @FindBy(id="dgLista_ctl03_chkSeleccion")
+    public WebElementFacade registro2;
+
+    @FindBy(id="dgLista_ctl04_chkSeleccion")
+    public WebElementFacade registro3;
+
+
+
+
 
 
 

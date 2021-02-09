@@ -3,12 +3,14 @@ package com.everis.base.steps;
 import com.everis.base.PageObject.DesembolsoPage;
 import com.everis.base.utils.WebDriverUtils;
 import net.thucydides.core.annotations.Step;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.asm.SpringAsmInfo;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver;
@@ -531,18 +533,37 @@ public class DesembolsoSteps {
         int nroCuotas = Integer.parseInt(cantCuotas);
         nroCuotas = nroCuotas+1 ;
 
+
+        switch (nroCuotas) {
+            case 1:
+                desembolsoPage.registro1.click();
+                break;
+            case 2:
+                desembolsoPage.registro1.click();
+                desembolsoPage.registro2.click();
+                break;
+            case 3:
+                desembolsoPage.registro1.click();
+                desembolsoPage.registro2.click();
+                desembolsoPage.registro3.click();
+                break;
+        }
+
+
         for(int i =2;i<=nroCuotas;i++){
             if(i<=9){
+
                 String NroChecks = "dgLista_ctl0"+i+"_chkSeleccion";
                 //Element CantChecks =  new Element("id", NroChecks);
-                logger.info("se ejecuto <9: " + NroChecks);
+                this.efa.executeAction(Action.Click, CantChecks);
+                logger.info("se ejecuto >9: " + NroChecks);
                 //this.efa.executeAction(Action.Click, CantChecks);
 
             }
             else if(i>=10){
                 String NroChecks = "dgLista_ctl"+i+"_chkSeleccion";
                 //Element CantChecks =  new Element("id", NroChecks);
-                //this.efa.executeAction(Action.Click, CantChecks);
+                this.efa.executeAction(Action.Click, CantChecks);
                 logger.info("se ejecuto >9: " + NroChecks);
             }
         }
