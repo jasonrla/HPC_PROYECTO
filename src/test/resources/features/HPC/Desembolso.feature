@@ -26,7 +26,7 @@ Feature: Desembolso
     And click en Consultas
     And click en Consulta del Credito
     And ingresar credito "<credito>"
-
+#prueba
     Examples:
       |user|password|ambiente|grupo|credito
       |XT9103|Lunes16%|Pruebas|Hipotecario|30000
